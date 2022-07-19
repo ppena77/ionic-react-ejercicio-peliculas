@@ -2,16 +2,14 @@ import { IonCol, IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonT
 import './Home.css';
 
 import CardsContainer from '../components/CardsContainer';
+import Toolbar from '../components/Toolbar';
 
 const Home: React.FC = () => {
+  console.log('testing home 3');
 
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>My App</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <Toolbar />
       <IonContent fullscreen className='ion-padding'>
         <IonGrid>
           <IonRow>
