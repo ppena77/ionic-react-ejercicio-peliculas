@@ -19,7 +19,7 @@ const Navigation: React.FC = () => {
 
   return (
     <>
-      <IonMenu side="end" type="push">
+      <IonMenu side="end" type="push" contentId="mainNav">
         <IonHeader>
           <IonToolbar color="danger">
             <IonTitle>End Menu</IonTitle>
@@ -35,7 +35,7 @@ const Navigation: React.FC = () => {
           </IonList>
         </IonContent>
       </IonMenu>
-      <IonRouterOutlet></IonRouterOutlet>
+      <IonRouterOutlet id="mainNav"></IonRouterOutlet>
     </>
   );
 };
