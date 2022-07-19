@@ -1,3 +1,7 @@
+ion-card  {
+    max-width: 200px;
+}
+
 .ion-card__img img {
     width: 100%;
 }
