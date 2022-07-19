@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonTitle, IonToolbar } from "@ionic/react";
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonTitle, IonToolbar } from "@ionic/react";
 
 import Navigation from "../components/Navigation";
 
@@ -7,7 +7,10 @@ const MenuTest: React.FC = () => {
         <>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>My Ionic App</IonTitle>
+                    <IonTitle slot="start">My Ionic App</IonTitle>
+                    <IonButtons slot="end">
+                        <IonMenuButton></IonMenuButton>
+                    </IonButtons>
                 </IonToolbar>
             </IonHeader>
             

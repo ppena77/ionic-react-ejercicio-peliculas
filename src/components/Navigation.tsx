@@ -9,10 +9,10 @@ import {
   IonRouterOutlet,
 } from "@ionic/react";
 
-interface MenuCustomEvent<T = any> extends CustomEvent {
+/*interface MenuCustomEvent<T = any> extends CustomEvent {
   detail: T;
   target: HTMLIonMenuElement;
-}
+}*/
 
 const Navigation: React.FC = () => {
   console.log("Inyectando Menú Navegación");
@@ -22,20 +22,17 @@ const Navigation: React.FC = () => {
       <IonMenu side="end" type="push" contentId="mainNav">
         <IonHeader>
           <IonToolbar color="danger">
-            <IonTitle>End Menu</IonTitle>
+            <IonTitle>Menú</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent>
           <IonList>
-            <IonItem>Menu Item</IonItem>
-            <IonItem>Menu Item</IonItem>
-            <IonItem>Menu Item</IonItem>
-            <IonItem>Menu Item</IonItem>
-            <IonItem>Menu Item</IonItem>
+            <IonItem routerLink="/home">Página Inicio</IonItem>
+            <IonItem>About</IonItem>
           </IonList>
         </IonContent>
       </IonMenu>
-      <IonRouterOutlet id="mainNav"></IonRouterOutlet>
+      <IonRouterOutlet></IonRouterOutlet>
     </>
   );
 };
