@@ -19,10 +19,8 @@ const Home: React.FC = () => {
               <h1>Películas recientes</h1>
             </IonCol>
           </IonRow>
-          <IonRow>
-            <IonCol>
-              <CardsContainer />
-            </IonCol>
+          <IonRow>            
+              <CardsContainer />            
           </IonRow>
         </IonGrid>
       </IonContent>
