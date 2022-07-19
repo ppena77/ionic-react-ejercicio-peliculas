@@ -10,7 +10,7 @@ const CardsContainer: React.FC = () => {
         <>
             {movies.map( movie => {
                 return (
-                    <Card key={movie.id} />
+                    <Card movieData={movie} key={movie.id} />
                 )})}
         </>
     )
