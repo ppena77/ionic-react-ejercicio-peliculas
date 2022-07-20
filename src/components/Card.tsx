@@ -9,12 +9,7 @@ interface movie {
 }
 
 const Card: React.FC<{ movieData: movie }> = (props) => {
-  /*console.log(props.movieData);
-  console.log(typeof(props.movieData));
-  console.log(props.movieData.id);
-  console.log(props.movieData.title);
-  console.log(props.movieData.poster_path);*/
-
+  
   const imgDomain = "https://image.tmdb.org/t/p/w220_and_h330_face";
 
   return (
