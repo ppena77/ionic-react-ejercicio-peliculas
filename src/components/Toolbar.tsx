@@ -6,10 +6,7 @@ import {
   IonMenuButton,
 } from "@ionic/react";
 
-import Navigation from "./Navigation";
-
 const Toolbar: React.FC = () => {
-    console.log('testing Toolbar component 3');
 
   return (
     <>

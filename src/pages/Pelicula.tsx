@@ -21,7 +21,7 @@ const Pelicula: React.FC = () => {
         </IonGrid>
       </IonContent>
     </IonPage>
-  );
+  )
 };
 
 export default Pelicula;
