@@ -36,7 +36,7 @@ const App: React.FC = () => (
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>        
-        <Route exact path="pelicula/:id/:title">
+        <Route exact path="/pelicula">
           <Pelicula />
         </Route>
         <Route exact path="/menu-test">

@@ -1,25 +1,14 @@
-import { IonPage, IonContent, IonGrid, IonRow, IonCol} from '@ionic/react';
-import Toolbar from '../components/Toolbar';
+import { IonPage, IonContent } from '@ionic/react';
+
 
 const Pelicula: React.FC = () => { 
+  console.log('why is it not rendering');
 
   return (
     <IonPage>
-      <Toolbar />
-      <IonContent fullscreen className="ion-padding">
-        <IonGrid>
-          <IonRow>
-            <IonCol>
-              <h1>Movie Title</h1>
-            </IonCol>
-          </IonRow>
-          <IonRow>
-            <p>
-              <a href="/home">Volver</a>
-            </p>
-          </IonRow>
-        </IonGrid>
-      </IonContent>
+      <IonContent fullscreen className='ion-padding'>
+        <p>Hello</p>
+      </IonContent>      
     </IonPage>
   )
 };
