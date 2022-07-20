@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       <IonContent fullscreen className="ion-padding">
         <IonGrid>
           <IonRow>
-            <IonCol>
+            <IonCol className="ion-text-center">
               <h1>Películas recientes</h1>
             </IonCol>
           </IonRow>
