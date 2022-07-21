@@ -6,7 +6,7 @@ interface movie {
   id: number;
   title: string;
   poster_path: string;
-}
+};
 
 const Card: React.FC<{ movieData: movie }> = (props) => {
   

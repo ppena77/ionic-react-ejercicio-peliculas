@@ -2,7 +2,7 @@ import { IonPage, IonContent, IonGrid, IonRow, IonCol } from '@ionic/react';
 import { RouteComponentProps } from 'react-router';
 import Toolbar from '../components/Toolbar';
 
-interface urlDataCatcher extends RouteComponentProps<{
+interface urlDataCatcher extends RouteComponentProps <{
   id: string;
   title: string
 }> {};
