@@ -13,7 +13,7 @@ const Card: React.FC<{ movieData: movie }> = (props) => {
   const imgDomain = "https://image.tmdb.org/t/p/w220_and_h330_face";
 
   return (
-    <IonCol className="ion-text-center" size="12" size-sm="6" size-md="4" size-lg="2">
+    <IonCol className="ion-align-self-center" size="12" size-sm="6" size-md="4" size-lg="2">
       <IonCard className="ion-card__img">
         <img
           src={imgDomain + props.movieData.poster_path}

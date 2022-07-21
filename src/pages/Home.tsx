@@ -15,7 +15,7 @@ const Home: React.FC = () => {
               <h1>Películas recientes</h1>
             </IonCol>
           </IonRow>
-          <IonRow>
+          <IonRow className="ion-justify-content-center">
             <CardsContainer />
           </IonRow>
         </IonGrid>

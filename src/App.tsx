@@ -26,7 +26,7 @@ import './theme/variables.css';
 
 setupIonicReact();
 
-const App: React.FC = () => (
+const App: React.FC = ( ) => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
@@ -35,10 +35,10 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
-        </Route>        
-        <Route path="/pelicula/:id/:title">
-          <Pelicula />
         </Route>
+
+        <Route path="/pelicula/:id/:title" component={Pelicula} />     
+             
         <Route exact path="/menu-test">
           <Navigation />
         </Route>
