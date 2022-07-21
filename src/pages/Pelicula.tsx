@@ -1,4 +1,4 @@
-import { IonPage, IonContent, IonGrid, IonRow, IonCol } from '@ionic/react';
+import { IonPage, IonContent, IonGrid, IonRow, IonCol, IonButton } from '@ionic/react';
 import { RouteComponentProps } from 'react-router';
 import Toolbar from '../components/Toolbar';
 
@@ -23,7 +23,7 @@ const Pelicula: React.FC< urlDataCatcher > = ( {match} ) => {
           </IonRow>
           <IonRow>
             <IonCol>
-              <a href="/home">Volver</a>              
+              <IonButton routerLink='/home' >Volver</IonButton>              
             </IonCol>
           </IonRow>
         </IonGrid>        

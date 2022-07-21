@@ -1,6 +1,4 @@
-import "./Card.css";
-
-import { IonButton, IonCard, IonCardHeader, IonCol } from "@ionic/react";
+import { IonButton, IonCard, IonCardHeader, IonCol, IonImg } from "@ionic/react";
 
 interface movie {
   id: number;
@@ -15,11 +13,10 @@ const Card: React.FC<{ movieData: movie }> = (props) => {
   return (
     <IonCol className="ion-align-self-center" size="12" size-sm="6" size-md="4" size-lg="2">
       <IonCard className="ion-card__img">
-        <img
+        <IonImg 
           src={imgDomain + props.movieData.poster_path}
           alt={props.movieData.title}
-          title={props.movieData.title}
-        />
+          title={props.movieData.title} />
         <IonCardHeader>
           <IonButton routerLink={`/pelicula/${props.movieData.id}/${props.movieData.title}`} expand="block">
             + Info
