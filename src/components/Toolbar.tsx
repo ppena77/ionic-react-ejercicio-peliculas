@@ -6,16 +6,16 @@ import {
   IonMenuButton,
 } from "@ionic/react";
 
-const Toolbar: React.FC = () => {
+/* Ojo, en IonMenuButton hay que apuntar a través del atributo "menu" a la propiedad menuId del menú de navegación */
 
+const Toolbar: React.FC = () => {
   return (
     <>
       <IonHeader>
         <IonToolbar>
           <IonTitle>My Ionic App</IonTitle>
           <IonButtons slot="end">
-            <IonMenuButton menu="main-menu" autoHide={false}>                
-            </IonMenuButton>
+            <IonMenuButton menu="main-menu" autoHide={false} />
           </IonButtons>
         </IonToolbar>
       </IonHeader>

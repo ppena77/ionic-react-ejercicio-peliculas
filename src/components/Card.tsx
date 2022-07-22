@@ -1,11 +1,13 @@
 import { IonButton, IonCard, IonCardHeader, IonCol, IonImg } from "@ionic/react";
 
+/* Definimos la interfaz movie con los elementos que queremos capturaar que vienen del componente padre */
 interface movie {
   id: number;
   title: string;
   poster_path: string;
 };
 
+/* Cargamos nuestra propiedad custom movieData, que es el atributo con los datos que llegan desde el componente padre, y le asignamos el tipo movie, definido arriba (quizá no es muy ideal que definamos como un "movie" la propidad movieData " y que los datos almacenados en el atributo se haga también a través de un objeto llamado "movie", pero lo dejamos así)*/
 const Card: React.FC<{ movieData: movie }> = (props) => {
   
   const imgDomain = "https://image.tmdb.org/t/p/w220_and_h330_face";
