@@ -1,37 +1,22 @@
-import {
-  IonMenu,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonContent,
-  IonList,
-  IonItem,
-  IonRouterOutlet,
-} from "@ionic/react";
-
-interface MenuCustomEvent<T = any> extends CustomEvent {
-  detail: T;
-  target: HTMLIonMenuElement;
-}
+import { IonContent, IonHeader, IonItem, IonList, IonMenu, IonRouterOutlet, IonTitle, IonToolbar } from "@ionic/react";
 
 const Navigation: React.FC = () => {
   
   return (
     <>
-      <IonMenu side="end" type="push" contentId="mainNav">
+      <IonMenu menuId="main-menu" contentId="main">
         <IonHeader>
-          <IonToolbar color="danger">
+          <IonToolbar color="primary">
             <IonTitle>Menú</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent>
           <IonList>
-            <IonItem routerLink="/home">Página Inicio</IonItem>
-            <IonItem>Sobre nosotos</IonItem>
+            <IonItem>Página Inicio</IonItem>
+            <IonItem>Sobre My Ionic App</IonItem>
           </IonList>
         </IonContent>
       </IonMenu>
-      <IonRouterOutlet id="maniNav"></IonRouterOutlet>
     </>
   );
 };

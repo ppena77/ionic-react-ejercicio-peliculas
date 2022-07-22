@@ -12,10 +12,9 @@ const Toolbar: React.FC = () => {
     <>
       <IonHeader>
         <IonToolbar>
-          <IonTitle slot="start">My Ionic App</IonTitle>
+          <IonTitle>My Ionic App</IonTitle>
           <IonButtons slot="end">
-            <IonMenuButton autoHide={false}>
-                
+            <IonMenuButton menu="main-menu" autoHide={false}>                
             </IonMenuButton>
           </IonButtons>
         </IonToolbar>
